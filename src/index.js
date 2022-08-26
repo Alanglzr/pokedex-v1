@@ -5,6 +5,7 @@ import Home from './routes/Home';
 import { Generation } from './routes/Generation';
 import { Detalles } from './routes/Detalles';
 import { Layout } from './Layout';
+import './estilos.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

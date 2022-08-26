@@ -20,22 +20,22 @@ export function Generation() {
         fetchGen(generationId)
     },[])
 
-    const numero = (generaciones)=>{
+    const numero = (generaciones) => {
         let arr = generaciones.url.split('/').slice(6).join('');
         return arr
     }
 
         return (
             <div className="container">
-                <div className="row">
+                <div className="container row">
                     <h1 className="text-capitalize">{generacion.main_region?.name}</h1>
                 {
         generacion.pokemon_species && generacion.pokemon_species.map((generaciones, index) => {
             return(
-                  <h2 className="card col-3 text-capitalize" key={index}>
-                    N°{numero(generaciones)}<Link to={`../../pokemon/${numero(generaciones)}`} 
-                    style={{ color: '	#000000', textDecoration: 'none' }}>{generaciones.name} {generaciones.id}</Link>
-                  </h2>
+                  <h3 className="card-title card col-12 col-md-4 col-xl-3 m-1 text-capitalize" key={index}>
+                    N°{numero(generaciones)}<Link to={`../../pokemon/${numero(generaciones)}`}>
+                        {generaciones.name} {generaciones.id}</Link>
+                  </h3>
             )
         })
       }

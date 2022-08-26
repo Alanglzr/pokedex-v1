@@ -1,0 +1,26 @@
+.pokemon-title {
+    text-align: center;
+  }
+
+  .card-title {
+    background-color:rgb(33,37,41);
+    color: white;
+  }
+
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: grey;
+  }
+  
+  a:active {
+    color: white;
+  }

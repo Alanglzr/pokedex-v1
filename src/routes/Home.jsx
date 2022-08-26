@@ -24,16 +24,15 @@ const Home = () => {
 
   return ( 
     <div className="container">
-      <div className="row">
+      <div className="container row">
       <h1>Generación</h1>
       {
         generations.map((generation, index) => {
 
             return(
-                  <h2 className="card col-3 text-uppercase" key={index}>
-                    <Link to={`lista-pokemon/${index+1}`} 
-                    style={{ color: '	#000000', textDecoration: 'none' }}>{generation.name}</Link>
-                  </h2>
+                  <h3 className="card-title card col-12 col-md-4 col-xl-3 text-uppercase mx-1  d-flex justify-content-center" key={index}>
+                    <Link to={`lista-pokemon/${index+1}`}>{generation.name}</Link>
+                  </h3>
 
             )
         })
